@@ -294,7 +294,7 @@ router.get('/download/tiktok', async (req, res, next) => {
   res.json(loghandler.apikey)
 }
 })
-router.get('/download/ytmp3', async (req, res, next) => {
+router.get('/downloader/ytmp3', async (req, res, next) => {
           var apikey = req.query.apikey
           var url = req.query.url
        	if(!apikey) return res.json(loghandler.noapikey)
